@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;600;700&display=swap");
+@import "./_navbar";
+@import "./_main";
+@import "./js";
+
+$light: aliceblue;
+$dark: rgb(190, 222, 251);
+
+body {
+   margin: 0;
+}
+
+.box {
+   background-color: rgb(29, 153, 255);
+}
+
+.bg-light {
+   background-color: $light !important;
+}
+
+.bg-dark {
+   background-color: $dark !important;
+}

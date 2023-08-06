@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <script>
+      var popoverTriggerList = [].slice.call(
+         document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+         return new bootstrap.Popover(popoverTriggerEl);
+      });
+   </script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./styles/styles.css" />
+
+   <title>Full-Stack Summary</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="shadow-sm navbar navbar-expand-lg bg-dark">
+      <div class="container d-block">
+         <div class="row">
+            <div class="col col-sm-12 text-center mt-2">
+               <a class="navbar-brand border border-3 border-dark p-2 m-0" style="font-size: 1.7rem"
+                  href="./index.html">Coding_Course_Summary</a>
+            </div>
+            <div class="col">
+               <div class="justify-content-center mt-3">
+                  <ul class="navbar-nav flex-row justify-content-center text-center mb-2 mb-lg-0">
+                     <li class="nav-item col-4 col-sm-auto">
+                        <a class="nav-link px-4" href="./index.html">HTML</a>
+                     </li>
+                     <li class="nav-item col-4 col-sm-auto">
+                        <a class="nav-link active px-4" href="#" aria-current="page">CSS</a>
+                     </li>
+                     <li class="nav-item col-4 col-sm-auto">
+                        <a class="nav-link last" href="./js.html">JavaScript</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Body -->
+   <div class="container my-3">
+      <div class="row">
+         <h3>HTML_Summary</h3>
+         <hr />
+
+
+         <!-- Left Bar -->
+         <div class="col-sm-2 order-1 order-sm-0 px-sm-1 mt-3 mt-sm-0">
+            <div class="row flex-sm-column gx-sm-2 ">
+               <div class="col-4 col-sm-12 mb-3">
+                  <div class="card h-100">
+                     <a href="https://app.diagrams.net/#G19xDqbNxJcu7ofis8xEISzbEgMZW-xr8r"
+                        class="link-dark text-decoration-none" target="_blank">
+                        <img
+                           src="https://aws.taf-jp.com/cms/wp-content/uploads/2022/06/blog_featured-img_w580px_diagrams-net.png"
+                           class="card-img-top" alt="Diagrams logo" />
+                        <div class="card-body p-2">
+                           <p class="card-text text-center">CSS Diagram</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="col-4 col-sm-12 mb-3">
+                  <div class="card h-100 py-3">
+                     <a href="https://fonts.google.com/" class="link-dark text-decoration-none" target="_blank">
+                        <img
+                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Google_Fonts_logo.svg/768px-Google_Fonts_logo.svg.png"
+                           class="card-img-top px-2" alt="Google fonts logo" />
+                        <div class="card-body p-2">
+                           <p class="card-text text-center">
+                              Google fonts
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="col-4 col-sm-12 mb-3">
+                  <div class="card h-100 py-3">
+                     <a href="https://www.cssportal.com/css-generators.php" class="link-dark text-decoration-none"
+                        target="_blank">
+                        <img src="https://www.cssportal.com/assets/images/cssportal.png" class="card-img-top px-2"
+                           alt="css portal logo" />
+                        <div class="card-body p-2">
+                           <p class="card-text text-center">
+                              CSS Generator
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Main -->
+         <main class="col-sm-8 ">
+            <div class="accordion" id="accordionExample">
+               <!-- Link CSS to HTML -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Link CSS to HTML
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">
+                              There are 3 ways to apply CSS styling to the
+                              HTML:
+                           </span>
+                        </p>
+
+                        <ol>
+                           <li>
+                              <span class="notes">
+                                 Styling inside the element tag itself:
+                                 <br />
+                              </span>
+                              <div class="left-line">
+                                 <code>
+                                       &lt;h1 style=&quot;color: black;
+                                       font-size: 15px;&quot;&gt;&lt;/h1&gt;
+                                    </code>
+                              </div>
+                           </li>
+
+                           <li>
+                              <span class="notes">
+                                 Styling inside the HTML file Using
+                                 &lt;style&gt; tag:<br />
+                              </span>
+                              <div class="left-line">
+                                 <code>
+                                       &lt;style&gt; <br />
+                                       &nbsp;&nbsp;h1 {<br />
+                                       &nbsp;&nbsp;&nbsp;&nbsp;color: black;<br />
+                                       &nbsp;&nbsp;&nbsp;&nbsp;font-size:
+                                       15px;<br />
+                                       &nbsp;&nbsp;}<br />
+                                       &lt;/style&gt;<br />
+                                    </code>
+                              </div>
+                              <span class="notes">
+                                 You should place the &lt;style&gt; tag in
+                                 the &lt;head&gt; tag.<br />
+                              </span>
+                           </li>
+                           <br>
+                           <li>
+                              <span class="notes">
+                                 Linking to external CSS file:<br />
+                              </span>
+                              <div class="left-line">
+                                 <code>
+                                       &lt;link rel=&quot;stylesheet&quot;
+                                       href=&quot;./location of file&quot;&gt;
+                                    </code>
+                              </div>
+                              <span class="notes">
+                                 <br />
+                                 This is the recommended method to style
+                                 entire web-sites.
+                              </span>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- CSS Selectors -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        CSS Selectors
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">
+                              Selectors are used to target specific parts of
+                              the HTML code. <br />
+                              These are the selectors we learned so far:
+
+                              <ol class="list-unstyled list-inline">
+                                 <li>
+                                    #id
+                                    <span class="notes">
+                                       = ID selector. Unique, there can not
+                                       be 2 elements with the same ID.
+                                    </span>
+                                 </li>
+                                 <li>
+                                    .class
+                                    <span class="notes">
+                                       = Class selector. Not unique, can be
+                                       used on elements as many time as
+                                       needed.
+                                    </span>
+                                 </li>
+                                 <li>
+                                    *
+                                    <span class="notes">= All elements selector.</span>
+                                 </li>
+                                 <li>
+                                    space/רווח
+                                    <span class="notes">= All child's selector.</span>
+                                 </li>
+                                 <li>
+                                    >
+                                    <span class="notes">= Direct child selector.</span>
+                                 </li>
+                                 <li>
+                                    , =
+                                    <span class="notes">
+                                       Or selector. If we want to apply the
+                                       same style on multiple parts.
+                                    </span>
+                                 </li>
+                              </ol>
+                           </span>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Selectors combinations -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Selectors combinations
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <ul>
+                           <li>
+                              div { <br />
+                              <span class="notes">selects all Div's</span><br />
+                              }<br />
+
+                              h1 {<br />
+                              <span class="notes">Selects all h1's</span><br />
+                              }
+                           </li>
+
+                           <li>
+                              div#hello { <br />
+                              <span class="notes">Selects only the div with the id="hello"<br />
+                                 There can be only 1 because it's an
+                                 id.</span><br />
+                              }
+                           </li>
+
+                           <li class="text-wrap">
+                              div.hello { <br />
+                              <span class="notes">Selects only the div with the class="hello"
+                                 <br />
+                                 There can be multiple because it's a
+                                 class.</span>
+                              }
+                           </li>
+
+                           <li>
+                              div #hello {<br />
+                              <span class="notes">Selects only the child of div with the
+                                 id="hello" </span><br />
+                              }
+                           </li>
+
+                           <li>
+                              div .hello {<br />
+                              <span class="notes">Selects only the child's of div with the
+                                 class="hello" </span><br />
+                              }
+                           </li>
+
+                           <li>
+                              div > #hello {<br />
+                              <span class="notes">Selects only the direct child of div with
+                                 the id="hello"
+                              </span>
+                              <br />
+                              }
+                           </li>
+                        </ul>
+                        <span class="notes"> </span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- The Box Model -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        The Box Model
+                     </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <img width="50%" src="./images/box_model.png" alt="The Box Model illustration" />
+                        <div class="notes">
+                           <code>box-sizing: content-box;</code> Default.
+                           <br />
+                           <code>box-sizing: border-box;</code> padding and
+                           margin are done inside. Good if you want to avoid
+                           scroll-bars.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Display: block / inline-block / inline -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Display: block / inline-block / inline
+                     </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">
+                              Specifies how to align HTML elements.
+                           </span>
+                        </p>
+
+                        <ol>
+                           <li>
+                              display: block;
+                              <span class="notes">
+                                 = there CAN'T be other element next to him.
+                              </span>
+                              <br />
+
+                              <div class="display-examples" style="
+                                       margin: 5px;
+                                       padding: 10px;
+                                       border: 1px solid white;
+                                    ">
+                                 <div style="
+                                          margin-bottom: 7px;
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: aliceblue;
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    1
+                                 </div>
+                                 <div style="
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: rgb(184, 211, 234);
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    2
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              display: inline-block;
+                              <span class="notes">
+                                 = there CAN be other element next to him. </span><br />
+
+                              <div class="display-examples" style="
+                                       margin: 5px;
+                                       padding: 10px;
+                                       border: 1px solid white;
+                                    ">
+                                 <div style="
+                                          display: inline-block;
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: aliceblue;
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    1
+                                 </div>
+                                 <div style="
+                                          display: inline-block;
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: rgb(184, 211, 234);
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    2
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              display: inline;
+                              <span class="notes">
+                                 = The elements takes only the space of their
+                                 content. <br />
+                                 width and height cannot be set.
+                              </span>
+
+                              <div class="display-examples" style="
+                                       margin: 5px;
+                                       padding: 10px;
+                                       border: 1px solid white;
+                                    ">
+                                 <div style="
+                                          display: inline;
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: aliceblue;
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    1
+                                 </div>
+                                 <div style="
+                                          display: inline;
+                                          color: black;
+                                          font-size: 35px;
+                                          text-align: center;
+                                          background-color: rgb(184, 211, 234);
+                                          width: 50px;
+                                          height: 50px;
+                                       ">
+                                    2
+                                 </div>
+                              </div>
+                           </li>
+
+                           <li>
+                              <span class="notes"> Combined: </span>
+
+                              <div class="display-examples" style="
+                                       font-size: 0px;
+                                       margin-top: 10px;
+                                       padding: 10px;
+                                       border: 1px solid white;
+                                    ">
+                                 <div style="
+                                          display: block;
+                                          width: 100%;
+                                          color: black;
+                                          font-size: 15px;
+                                          text-align: center;
+                                          background-color: aliceblue;
+                                          height: 50px;
+                                       ">
+                                    block
+                                 </div>
+                                 <div style="width: 100%; margin-block: 5px">
+                                    <div style="
+                                             display: inline-block;
+                                             width: 70%;
+                                             color: black;
+                                             font-size: 15px;
+                                             text-align: center;
+                                             background-color: rgb(
+                                                184,
+                                                211,
+                                                234
+                                             );
+                                             height: 50px;
+                                             vertical-align: top;
+                                          ">
+                                       inline-block width 70%
+                                    </div>
+                                    <div style="
+                                             display: inline-block;
+                                             width: 30%;
+                                             color: black;
+                                             font-size: 15px;
+                                             text-align: center;
+                                             background-color: aliceblue;
+                                             height: 50px;
+                                          ">
+                                       inline-block width 30%
+                                    </div>
+                                 </div>
+                                 <div style="
+                                          display: block;
+                                          color: black;
+                                          font-size: 15px;
+                                          text-align: center;
+                                          background-color: rgb(184, 211, 234);
+                                          height: 50px;
+                                       ">
+                                    block
+                                 </div>
+                              </div>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Useful CSS Parameters -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Useful CSS Parameters
+                     </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                     data-bs-parent="#accordionExample">
+                     <div>
+                        <table class="table table-striped table-bordered table_responsive mt-3">
+                           <thead class="thead-dark">
+                              <tr>
+                                 <th>Property</th>
+                                 <th>Description</th>
+                                 <th>Values</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td><strong> color </strong></td>
+                                 <td>Element color</td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td><strong> background-color </strong></td>
+                                 <td>Background color</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> background-image </strong></td>
+                                 <td>Sets the background image</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> display </strong></td>
+                                 <td>Display behavior</td>
+                                 <td>
+                                    <code>{block, inline-block, inline,
+                                          none}</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><strong> width </strong></td>
+                                 <td>Element width</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> height </strong></td>
+                                 <td>Element height</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> min-width </strong></td>
+                                 <td>Minimum width</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> min-height </strong></td>
+                                 <td>Minimum height</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> max-width </strong></td>
+                                 <td>Maximum width</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> max-height </strong></td>
+                                 <td>Maximum height</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> margin </strong></td>
+                                 <td>Outter margins property</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> padding </strong></td>
+                                 <td>Inner margin property</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> border </strong></td>
+                                 <td>Border property</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> border-color </strong></td>
+                                 <td>Border color</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> border-width </strong></td>
+                                 <td>Border width</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> border-style </strong></td>
+                                 <td>Border style</td>
+                                 <td>
+                                    <code>{none, solid, dotted, inset, dashed
+                                          solid ...}</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><strong> border-radius </strong></td>
+                                 <td>Border radius</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> font </strong></td>
+                                 <td>Font properties</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> font-family </strong></td>
+                                 <td>Defines the font</td>
+                                 <td></td>
+                              </tr>
+                              <tr>
+                                 <td><strong> font-style </strong></td>
+                                 <td>Font style</td>
+                                 <td>
+                                    <code>{normal, italic, oblique}</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><strong> font-weight </strong></td>
+                                 <td>Thickness of the font</td>
+                                 <td>
+                                    <code>{normal, bold, lighter, bolder}</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><strong> position </strong></td>
+                                 <td>
+                                    Type of positioning used for an element
+                                 </td>
+                                 <td>
+                                    <code>`{static, relative, absolute, fixed,
+                                          sticky}`</code>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td><strong> z-index </strong></td>
+                                 <td>
+                                    Sets the order of overlapping elements
+                                 </td>
+                                 <td>
+                                    <code>`{auto, -1, 0, 1, 2, 3 ...}`</code>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- src: Local files location -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        src: Local files location
+                     </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">Relative:</span><br />
+                           <code>./ –</code>
+                           <span class="notes">Selects file in current folder </span><br />
+                           <code>../ -</code>
+                           <span class="notes">Selects file in previous folder</span><br />
+                           <br />
+                           <span class="notes">Absolute:</span><br />
+                           <code>/ </code>-<span class="notes">Selects root folder (not recommended)</span>
+                           <br />
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Units -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEight">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Units
+                     </button>
+                  </h2>
+                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">Absolute:</span><br />
+                           <code>px/mm/cm –</code>
+                           <span class="notes">Fixed size, with no regard to the screen size.
+                              px recommended.</span><br />
+                           <br />
+                           <span class="notes">Relative:</span><br />
+                           <code>vh & vw –</code>
+                           <span class="notes">View height & View width, units relative to
+                              screen size (viewport). used mainly for big
+                              containers like &lt;body&gt;.</span>
+                           <br />
+                           <code>% -</code>
+                           <span class="notes">percentage – Relative to father
+                              container.</span><br />
+                           <code>em –</code>
+                           <span class="notes">For fonts. Relative to the font size of the
+                              closest ancestors.</span><br />
+                           <code>rem –</code>
+                           <span class="notes">relative to the default font size of the root
+                              (of the main element - &lt;HTML&gt;)</span>
+                           <br />
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Position -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingNine">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Position
+                     </button>
+                  </h2>
+                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <ul>
+                           <li>
+                              Static – <span class="notes">default.</span>
+                              <br />
+                           </li>
+
+                           <li>
+                              Relative –
+                              <span class="notes">moves relative to original position. stays
+                                 in the flow of the page.</span>
+                              <br />
+                           </li>
+
+                           <li>
+                              Absolute –
+                              <span class="notes">relative to any ancestor who's not in a
+                                 static position. gets out of the flow of the
+                                 page.</span>
+                              <br />
+                           </li>
+
+                           <li>
+                              Fixed –
+                              <span class="notes">relative to viewport. meaning that it keeps
+                                 its position even if the user scrolls up and
+                                 down. Gets out of main flow.</span><br />
+                           </li>
+
+                           <li>
+                              Sticky –
+                              <span class="notes">a combination of all the above. Stays in
+                                 the flow. Remember to specify a location
+                                 parameter (top/left ect...), otherwise he
+                                 won't move if scrolled.</span>
+                           </li>
+                        </ul>
+
+                        <p>
+                           <span class="notes">
+                              Additional parameter that goes along with all
+                              the above, to specify how we want to place the
+                              element:
+                           </span>
+                           <br />
+
+                           <code>top | bottom | left | right | z-index</code>
+                           <span class="notes">(front and back axis, in order to control
+                              who's on top )
+                           </span>
+                           <br />
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Display: flex -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFourt">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFourt" aria-expanded="false" aria-controls="collapseFourt">
+                        Display: flex
+                     </button>
+                  </h2>
+                  <div id="collapseFourt" class="accordion-collapse collapse" aria-labelledby="headingFourt"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="btn btn-warning mb-3"
+                           target="_blank">Flex complete guide</a>
+                        <div class="left-line overflow-auto" style="white-space: nowrap">
+                           <code class="text-white">
+                                 .container { <br />
+                                 &nbsp; display: flex; <br />
+                                 &nbsp; flex-direction: row | column; <br />
+                                 &nbsp; flex-wrap: wrap | nowrap; <br />
+                                 &nbsp; flex-flow: row wrap | column nowrap;
+                                 <button
+                                    type="button"
+                                    class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                    data-bs-toggle="popover"
+                                    title="flex-flow"
+                                    data-bs-content="The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties."
+                                 >
+                                    i
+                                 </button>
+                                 <br />
+                                 &nbsp; justify-content: flex-start | flex-end |
+                                 center | space-between | space-around |
+                                 space-evenly;
+                                 <br />
+                                 &nbsp; align-items: flex-start | flex-end |
+                                 center | baseline | stretch; <br />
+                                 }
+                              </code>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Display: grid -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFiftht">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFiftht" aria-expanded="false" aria-controls="collapseFiftht">
+                        Display: grid
+                     </button>
+                  </h2>
+                  <div id="collapseFiftht" class="accordion-collapse collapse" aria-labelledby="headingFiftht"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content overflow-auto" style="white-space: nowrap;">
+                        <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" class="btn btn-warning"
+                           target="_blank">Grid complete guide</a>
+                        <a href="https://cssgridgarden.com/#he" class="btn btn-warning" target="_blank">Grid Game</a>
+                        <div class="left-line mt-2">
+                           <code>.container { <br>
+                              &nbsp; display: grid; <br>
+                              &nbsp; Grid-template-row: 20px 20px 
+                              <button
+                              type="button"
+                              class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                              data-bs-toggle="popover"
+                              title="Manual cell size"
+                              data-bs-content="2 cells, 20 px each"
+                           >
+                              i
+                           </button> 
+                               | 1fr 1fr 
+                               <button
+                               type="button"
+                               class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                               data-bs-toggle="popover"
+                               title="Fr (Fraction)"
+                               data-bs-content="2 cells equally sized, 1 fraction wide. each fraction takes equal space from the available space"
+                            >
+                               i
+                            </button> 
+                               
+                               | repeat(5, 1fr)
+      
+                               <button
+                               type="button"
+                               class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                               data-bs-toggle="popover"
+                               title="Repeat"
+                               data-bs-content="5 cells, 1fr wide each. another example: repeat(4, 20px) will create 4 cells, 20px wide each"
+                            >
+                               i
+                            </button> <br>
+      
+                            &nbsp; Grid-template-column: <span class="notes">same principles as above, but for the columns.</span> <br>
+                            &nbsp; row-gap: 10px; <br>
+                            &nbsp; column-gap: 15px; <br>
+                            &nbsp; gap: 10px 15px; 
+                            <button
+                            type="button"
+                            class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                            data-bs-toggle="popover"
+                            title="gap"
+                            data-bs-content="Shorthand for row-gap and column-gap"
+                         >
+                            i
+                         </button> 
+                           </code>
+                        </div>
+                        <div class="left-line mt-3">
+                           <code>
+                              .cell { <br>
+                                 grid-row: 3/5; 
+                                 <button
+                                 type="button"
+                                 class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                 data-bs-toggle="popover"
+                                 title="grid-row"
+                                 data-bs-content="Starts at row 3, Finishes at row 5 (2 vertical cells)"
+                              >
+                                 i
+                              </button> <br>
+                                 grid-column: 3 / span 2;
+                                 <button
+                                 type="button"
+                                 class="btn btn-lg btn-info rounded-5 p-1 fs-6"
+                                 data-bs-toggle="popover"
+                                 title="span 2"
+                                 data-bs-content="Starts at column 3 and spans (expands) on 2 cells"
+                              >
+                                 i
+                              </button>
+                              }
+                           </code>
+                        </div>
+
+                        <p class="notes">
+                           <br>
+                           Second grid method :
+                        </p>
+                        <div class="left-line"><code>
+                           .cell-a {  <br>
+                              &nbsp;grid-area: header; <br>
+                            } <br>
+                            .cell-b { <br>
+                              &nbsp;grid-area: main; <br>
+                            } <br>
+                            .cell-c { <br>
+                              &nbsp;grid-area: sidebar; <br>
+                            } <br>
+                            .cell-d { <br>
+                              &nbsp;grid-area: footer; <br>
+                            } <br>
+                             <br>
+                            .container { <br>
+                             &nbsp; display: grid; <br>
+                              &nbsp;grid-template-columns: 50px 50px 50px 50px; <br>
+                             &nbsp; grid-template-rows: auto; <br>
+                             &nbsp; grid-template-areas:  <br>
+                             &nbsp; &nbsp;   "header header header header" <br>
+                             &nbsp; &nbsp;   "main main . sidebar" <br>
+                             &nbsp; &nbsp;   "footer footer footer footer"; <br>
+                            } <br>
+                        </code></div>
+                        <br>
+                        <p class="notes">Result:</p>
+                        <img src="https://css-tricks.com/wp-content/uploads/2018/11/dddgrid-template-areas.svg"
+                           alt="grid-template-areas example" class="mw-75">
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Overflow -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTen">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Overflow
+                     </button>
+                  </h2>
+                  <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p>
+                           <span class="notes">Deals with content that gets spilled out of
+                              its container.
+                           </span>
+                           <br />
+                           <br />
+                           <span class="text-white">Overflow: Visible; -</span>
+                           <span class="notes"> default.</span> <br />
+                           <span class="text-white">Overflow: Hidden; –</span>
+                           <span class="notes">wont show the parts that overflow. </span><br />
+                           <span class="text-white">Overflow: Scroll; –</span>
+                           <span class="notes">will force a scroll bar on all sides,
+                              regardless of the necessity of it.
+                           </span>
+                           <br />
+                           <span class="text-white">Overflow: Auto; –</span>
+                           <span class="notes">will create a scroll only if the content get
+                              spilled in that direction. </span><br />
+                           <br />
+                           <span class="text-white">Examples :</span>
+                           <br />
+                        </p>
+
+                        <input name="options" type="radio" id="visible" checked />
+                        <label class="text-white" for="visible">overflow: visible (default)</label>
+                        <input name="options" type="radio" id="hidden" />
+                        <label class="text-white" for="hidden">overflow: hidden</label>
+                        <input name="options" type="radio" id="scroll" />
+                        <label class="text-white" for="scroll">overflow: scroll</label>
+                        <input name="options" type="radio" id="auto" />
+                        <label class="text-white" for="auto">overflow: auto</label>
+
+                        <div class="bg-warning text-white overflow-examples">
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Dolorem facilis soluta adipisci iusto sed
+                           ipsa quasi dolores asperiores repellat ratione?
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Pseudo-selectors -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEl">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEl" aria-expanded="false" aria-controls="collapseEl">
+                        Pseudo-selectors
+                     </button>
+                  </h2>
+                  <div id="collapseEl" class="accordion-collapse collapse" aria-labelledby="headingEl"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p class="notes">
+                           Pseudo selectors allow you to control the style of
+                           elements under certain states. <br />
+                           for example when you hover over it, when you click
+                           it ect... <br />
+                           Pseudo elements we'v learned:
+                        </p>
+                        <ul>
+                           <li>
+                              <code> :hover </code>
+                              <p class="notes pc">
+                                 = when the mouse is above the element.
+                              </p>
+                           </li>
+                           <li>
+                              <code> :active </code>
+                              <p class="notes pc">
+                                 = when you click the element.
+                              </p>
+                           </li>
+                           <li>
+                              <code> :focus </code>
+                              <p class="notes pc">
+                                 = for inputs. when you click on the input
+                                 field.
+                              </p>
+                           </li>
+                           <li>
+                              <code> :visited </code>
+                              <p class="notes pc">
+                                 = for links, you can style a link
+                                 differently when it was clicked once.
+                              </p>
+                           </li>
+                           <li>
+                              <code> :checked </code>
+                              <p class="notes pc">
+                                 for checkboxes / radios.
+                              </p>
+                           </li>
+                           <li>
+                              <code> :nth-child() </code>
+                              <p class="notes">
+                                 = selects a specific child of an element.
+                              </p>
+                           </li>
+                        </ul>
+                        <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                           All Pseudo-classes
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                           <div class="card card-body">
+                              <h2>All CSS Pseudo Classes</h2>
+                              <div class="overflow-auto">
+                                 <table class="table table-striped table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <th style="width: 20%">
+                                             Selector
+                                          </th>
+                                          <th style="width: 20%">Example</th>
+                                          <th>Example description</th>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_active.asp">:active</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             a:active
+                                          </td>
+                                          <td>Selects the active link</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_checked.asp">:checked</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:checked
+                                          </td>
+                                          <td>
+                                             Selects every checked
+                                             &lt;input&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_disabled.asp">:disabled</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:disabled
+                                          </td>
+                                          <td>
+                                             Selects every disabled
+                                             &lt;input&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_empty.asp">:empty</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:empty
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that has no children
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_enabled.asp">:enabled</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:enabled
+                                          </td>
+                                          <td>
+                                             Selects every enabled
+                                             &lt;input&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_firstchild.asp">:first-child</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:first-child
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; elements
+                                             that is the first child of its
+                                             parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_first-of-type.asp">:first-of-type</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:first-of-type
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the first &lt;p&gt;
+                                             element of its parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_focus.asp">:focus</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:focus
+                                          </td>
+                                          <td>
+                                             Selects the &lt;input&gt;
+                                             element that has focus
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_hover.asp">:hover</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             a:hover
+                                          </td>
+                                          <td>
+                                             Selects links on mouse over
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_in-range.asp">:in-range</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:in-range
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with a value within a specified
+                                             range
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_invalid.asp">:invalid</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:invalid
+                                          </td>
+                                          <td>
+                                             Selects all &lt;input&gt;
+                                             elements with an invalid value
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_lang.asp">:lang(<i>language</i>)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:lang(it)
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             with a lang attribute value
+                                             starting with "it"
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_last-child.asp">:last-child</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:last-child
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; elements
+                                             that is the last child of its
+                                             parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_last-of-type.asp">:last-of-type</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:last-of-type
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the last &lt;p&gt;
+                                             element of its parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_link.asp">:link</a>
+                                          </td>
+                                          <td class="notranslate">a:link</td>
+                                          <td>
+                                             Selects all unvisited links
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_not.asp">:not(selector)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             :not(p)
+                                          </td>
+                                          <td>
+                                             Selects every element that is
+                                             not a &lt;p&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_nth-child.asp">:nth-child(n)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:nth-child(2)
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the second child of its
+                                             parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_nth-last-child.asp">:nth-last-child(n)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:nth-last-child(2)
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the second child of its
+                                             parent, counting from the last
+                                             child
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_nth-last-of-type.asp">:nth-last-of-type(n)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:nth-last-of-type(2)
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the second &lt;p&gt;
+                                             element of its parent, counting
+                                             from the last child
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_nth-of-type.asp">:nth-of-type(n)</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:nth-of-type(2)
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the second &lt;p&gt;
+                                             element of its parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_only-of-type.asp">:only-of-type</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:only-of-type
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the only &lt;p&gt;
+                                             element of its parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_only-child.asp">:only-child</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p:only-child
+                                          </td>
+                                          <td>
+                                             Selects every &lt;p&gt; element
+                                             that is the only child of its
+                                             parent
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_optional.asp">:optional</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:optional
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with no "required" attribute
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_out-of-range.asp">:out-of-range</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:out-of-range
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with a value outside a specified
+                                             range
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_read-only.asp">:read-only</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:read-only
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with a "readonly" attribute
+                                             specified
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_read-write.asp">:read-write</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:read-write
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with no "readonly" attribute
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_required.asp">:required</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:required
+                                          </td>
+                                          <td>
+                                             Selects &lt;input&gt; elements
+                                             with a "required" attribute
+                                             specified
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_root.asp">:root</a>
+                                          </td>
+                                          <td class="notranslate">root</td>
+                                          <td>
+                                             Selects the document's root
+                                             element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_target.asp">:target</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             #news:target
+                                          </td>
+                                          <td>
+                                             Selects the current active #news
+                                             element (clicked on a URL
+                                             containing that anchor name)
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_valid.asp">:valid</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             input:valid
+                                          </td>
+                                          <td>
+                                             Selects all &lt;input&gt;
+                                             elements with a valid value
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_visited.asp">:visited</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             a:visited
+                                          </td>
+                                          <td>Selects all visited links</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" class="btn btn-info"
+                                 target="_blank">
+                                 Reference
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Pseudo-Elements -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTW">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTW" aria-expanded="false" aria-controls="collapseTW">
+                        Pseudo-Elements
+                     </button>
+                  </h2>
+                  <div id="collapseTW" class="accordion-collapse collapse" aria-labelledby="headingTW"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p class="notes">
+                           A CSS pseudo-element is used to style specified
+                           parts of an element. <br />
+                           For example, it can be used to:
+                        </p>
+                        <ul>
+                           <li class="notes">
+                              Style the first letter, or line, of an element
+                           </li>
+                           <li class="notes">
+                              Insert content before, or after, the content of
+                              an element
+                           </li>
+                        </ul>
+                        <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                           aria-expanded="false" aria-controls="collapseExample">
+                           All Pseudo-Elements
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                           <div class="card card-body">
+                              <h2>All CSS Pseudo-Elements</h2>
+                              <div class="overflow-auto">
+                                 <table class="table table-striped table-bordered">
+                                    <tbody>
+                                       <tr>
+                                          <th style="width: 20%">
+                                             Selector
+                                          </th>
+                                          <th style="width: 20%">Example</th>
+                                          <th>Example description</th>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_after.asp">::after</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p::after
+                                          </td>
+                                          <td>
+                                             Insert something after the
+                                             content of each &lt;p&gt;
+                                             element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_before.asp">::before</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p::before
+                                          </td>
+                                          <td>
+                                             Insert something before the
+                                             content of each &lt;p&gt;
+                                             element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_firstletter.asp">::first-letter</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p::first-letter
+                                          </td>
+                                          <td>
+                                             Selects the first letter of each
+                                             &lt;p&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_firstline.asp">::first-line</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p::first-line
+                                          </td>
+                                          <td>
+                                             Selects the first line of each
+                                             &lt;p&gt; element
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_marker.asp">::marker</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             ::marker
+                                          </td>
+                                          <td>
+                                             Selects the markers of list
+                                             items
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <a href="/cssref/sel_selection.asp">::selection</a>
+                                          </td>
+                                          <td class="notranslate">
+                                             p::selection
+                                          </td>
+                                          <td>
+                                             Selects the portion of an
+                                             element that is selected by a
+                                             user
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" class="btn btn-info"
+                                 target="_blank">
+                                 Reference
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Transition -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThir">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThir" aria-expanded="false" aria-controls="collapseThir">
+                        Transition
+                     </button>
+                  </h2>
+                  <div id="collapseThir" class="accordion-collapse collapse" aria-labelledby="headingThir"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p class="notes">
+                           Transitions are used to animate the transition
+                           between two states of the same element. <br />
+                           For example if a transformation is applied when
+                           :hover, :active ect.. <br />
+                           Syntax:
+                        </p>
+                        <div class="left-line">
+                           <code> transition: transform 2s ease-in; </code>
+                        </div>
+                        <p class="notes">
+                           In this example we've set the transition to apply
+                           on the transform parameter, <br />
+                           The animation will be 2 seconds long, <br />
+                           And will have a Ease-in effect (The animation will
+                           start fast and end slowly). <br />
+                           <span class="text-info fs-4">Remember!</span> you
+                           need to place the <code>transition</code> in the
+                           main CSS selector, NOT in the :hover Pseudo-class!
+                           <br />
+                           <br />
+                           You can set the transition to apply on all the
+                           different parameters, using 'all':
+                        </p>
+
+                        <div class="left-line">
+                           <code> transition: all 2s ease-in; </code>
+                        </div>
+                        <p class="notes">
+                           <br />
+                           Or you can set on multiple parameters, like this:
+                        </p>
+
+                        <div class="left-line">
+                           <code> transition: width 2s, height 4s; </code>
+                        </div>
+                        <p class="notes">
+                           This way you can set different timing for
+                           different parameters. <br /><br />
+                           Transitions examples:
+                        </p>
+                        <div class="row">
+                           <div class="col">
+                              <div class="transition-example">1</div>
+                           </div>
+                           <div class="col">
+                              <div class="transition-example">2</div>
+                           </div>
+                           <div class="col">
+                              <div class="transition-example">3</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Animation @keyframes -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading20">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                        Animation @keyframes
+                     </button>
+                  </h2>
+                  <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <div class="left-line"><code>
+                            <div class="notes">The animation code:</div>  <br>
+                           @keyframes animation-name { <br>
+                              &nbsp;&nbsp;from {background-color: red;} <br>
+                              &nbsp;&nbsp;to {background-color: yellow;} <br>
+                           } <br>
+ <br>
+                            <div class="notes">The element to apply the animation to:</div>  <br>
+                           div { <br>
+                           &nbsp;&nbsp;width: 100px; <br>
+                           &nbsp;&nbsp;height: 100px; <br>
+                           &nbsp;&nbsp;background-color: red; <br>
+                           &nbsp;&nbsp;animation: animation-name 5s infinite; <br>
+                           } <br>
+                       </code></div>
+
+                        <div class="col-12 text-center">
+                           Result:
+                           <div class="animation-example1 mx-auto"></div>
+                        </div>
+
+                        <div class="notes my-4">
+                           Second method:
+                        </div>
+
+                        <div class="left-line"><code>
+                            <div class="notes">The animation code:</div> <br>
+                           @keyframes animation-name { <br>
+                           &nbsp;&nbsp;0%   {background-color: red;} <br>
+                           &nbsp;&nbsp;25%  {background-color: yellow;} <br>
+                           &nbsp;&nbsp;50%  {background-color: blue;} <br>
+                           &nbsp;&nbsp;100% {background-color: green;} <br>
+                           } <br>
+ <br>
+                            <div class="notes">The element to the animation to:</div>  <br>
+                           div { <br>
+                           &nbsp;&nbsp;width: 100px; <br>
+                           &nbsp;&nbsp;height: 100px; <br>
+                           &nbsp;&nbsp;background-color: red; <br>
+                           &nbsp;&nbsp;animation: animation-name 5s infinite; <br>
+                           } <br>
+                       </code></div>
+                        <div class="animation-example2"></div>
+
+                        <div class="notes my-3">
+                           Shorthand:
+                        </div>
+
+                        <div class="left-line">
+                           <code>
+                              long {<br>
+                              &nbsp;animation-name: example;<br>
+                              &nbsp;animation-duration: 5s;<br>
+                              &nbsp;animation-timing-function: linear;<br>
+                              &nbsp;animation-delay: 2s;<br>
+                              &nbsp;animation-iteration-count: infinite;<br>
+                              &nbsp;animation-direction: alternate;<br>
+                              }<br>
+                              <br>
+                              short {<br>
+                              &nbsp;animation: example 5s linear 2s infinite alternate;<br>
+                              }<br>
+                           </code>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Media queries -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSixt">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixt" aria-expanded="false" aria-controls="collapseSixt">
+                        Media queries
+                     </button>
+                  </h2>
+                  <div id="collapseSixt" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+                        <p class="notes">Media queries are used to adapt the style to different screen sizes.</p>
+                        <div class="left-line"><code>
+                        <span class="notes">/* Set the background color of body to green */</span>  <br>
+                       body { <br>
+                        &nbsp;&nbsp;background-color: green; <br>
+                        &nbsp;} <br>
+ <br>
+                        <span class="notes">/* On screens that are 992px or less, set the background color to blue */</span> <br>
+                        @media screen and (max-width: 992px) { <br>
+                       &nbsp; body { <br>
+                        &nbsp; &nbsp; background-color: blue; <br>
+                        &nbsp;&nbsp; } <br>
+                       &nbsp; } <br>
+ <br>
+                        <span class="notes">/* On screens that are 600px or less, set the background color to olive */</span> <br>
+                        @media screen and (max-width: 600px) { <br>
+                       &nbsp; body { <br>
+                        &nbsp;  &nbsp; background-color: olive; <br>
+                        &nbsp;  &nbsp;} <br>
+                        } <br>
+                       </code></div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Bootstrap -->
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSixTeen">
+                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixTeen" aria-expanded="false" aria-controls="collapseSixTeen">
+                        Bootstrap
+                     </button>
+                  </h2>
+                  <div id="collapseSixTeen" class="accordion-collapse collapse" aria-labelledby="headingSixTeen"
+                     data-bs-parent="#accordionExample">
+                     <div class="summary-content">
+
+                        <div class="px-3">
+                           <p class="notes">
+                              Bootstrap links:
+                           </p>
+                        </div>
+
+                        <div class="left-line position-relative">
+                           <button class="position-absolute end-0 btn btn-info p-1" onclick="copyText()">Copy</button>
+                           <p class="overflow-auto text-white-50" style="white-space: nowrap">
+                              &lt;link
+                              href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot;
+                              rel=&quot;stylesheet&quot;
+                              integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot;
+                              crossorigin=&quot;anonymous&quot;&gt; <br>
+                              &lt;script
+                              src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js&quot;
+                              integrity=&quot;sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN&quot;
+                              crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+                           </p>
+                           <script>
+                              function copyText() {
+
+                                 /* Copy text into clipboard */
+                                 navigator.clipboard.writeText
+                                    (`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"><\/script>`);
+                              }
+                           </script>
+                        </div>
+                        <p class="notes">
+                           Download Bootstrap files:
+                        </p>
+                        <a
+                           href="https://github.com/twbs/bootstrap/releases/download/v5.3.0-alpha1/bootstrap-5.3.0-alpha1-dist.zip"><button
+                              class="btn btn-info">Download</button></a>
+
+
+                        <p class="notes mt-3">
+                           Bootstrap recommended video: <br>
+                        <div class="ratio ratio-16x9">
+                           <iframe src="https://www.youtube.com/embed/Jyvffr3aCp0" title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen></iframe>
+                        </div>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </main>
+
+         <!-- Right Bar -->
+         <div class="col-sm-2 order-1 order-sm-0 px-sm-1 mt-sm-0">
+            <div class="row flex-sm-column gx-sm-2 ">
+
+
+               <div class="col-4 col-sm-12 mb-3">
+                  <div class="card h-100">
+                     <a href="https://github.com/zadokdaniel/W290922ER" class="link-dark text-decoration-none"
+                        target="_blank">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png"
+                           class="card-img-top px-2" alt="Github files" />
+                        <div class="card-body p-2">
+                           <p class="card-text text-center">
+                              Files From Class
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col p-0">
+            <div class="bg-dark text-center">
+               <p class="d-inline-block text-black border border-2 fw-semibold border-dark p-1 px-2 my-3 "
+                  style="font-size: 0.8rem;">
+                  Generated_By_Yoel_BarLev
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
+
+<script>
+   var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+   );
+   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+   });
+</script>

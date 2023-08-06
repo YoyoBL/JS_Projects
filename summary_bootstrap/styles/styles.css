@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200;300;400;600;700&display=swap");
+nav {
+  font-family: monospace;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  border: rgb(83, 83, 83) 2px solid;
+  margin-right: 8px;
+  background-color: aliceblue;
+}
+.nav-link.active {
+  border: rgb(0, 0, 0) 3px solid;
+  background-color: white;
+}
+.nav-link.last {
+  margin-right: 0%;
+}
+
+.accordion-item:nth-child(odd) > h2 > button {
+  background-color: aliceblue;
+}
+
+.summary-content {
+  padding: 15px;
+  background-color: rgb(37, 41, 48);
+  font-family: Inconsolata;
+}
+.summary-content .left-line {
+  padding-left: 10px;
+  border-left: 3px solid palevioletred;
+}
+.summary-content code {
+  color: white;
+  font-size: 1rem;
+}
+.summary-content .notes {
+  color: orange;
+}
+.summary-content li {
+  color: white;
+}
+
+.overflow-examples {
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  width: 300px;
+  height: 50px;
+  /* overflow: auto; */
+  /* overflow: visible; */
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  background-color: #f00;
+}
+
+input#auto:checked ~ div.overflow-examples {
+  overflow: auto;
+}
+
+input#scroll:checked ~ div.overflow-examples {
+  overflow: scroll;
+}
+
+input#hidden:checked ~ div.overflow-examples {
+  overflow: hidden;
+}
+
+input#visible:checked ~ div.overflow-examples {
+  overflow: visible;
+}
+
+li:nth-child(1) p.pc:hover {
+  color: purple;
+}
+
+li:nth-child(2) p.pc:active {
+  color: purple;
+}
+
+.transition-example {
+  background-color: aliceblue;
+  transition: all 0.2s;
+}
+.transition-example:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: orange;
+}
+
+@keyframes animation-name1 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+.animation-example1 {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  animation: animation-name1 5s infinite;
+}
+
+@keyframes animation-name2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+.animation-example2 {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  animation: animation-name2 5s infinite;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  background-color: rgb(29, 153, 255);
+}
+
+.bg-light {
+  background-color: aliceblue !important;
+}
+
+.bg-dark {
+  background-color: rgb(190, 222, 251) !important;
+}/*# sourceMappingURL=styles.css.map */

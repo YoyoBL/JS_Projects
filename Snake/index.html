@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+         crossorigin="anonymous"
+      ></script>
+      <script defer src="./script.js"></script>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Snake</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="row ps-3 pt-3">
+            <div class="light"></div>
+            <div class="light"></div>
+         </div>
+         <div class="row ratio ratio-1x1" style="margin: 10px">
+            <div class="play-area h-100">
+               <div
+                  class="bg-danger d-flex justify-content-center align-items-center d-none text-center fs-4"
+                  style="z-index: 5"
+                  id="game-over"
+               >
+                  <p class="fs-3">GAME OVER</p>
+               </div>
+               <button
+                  onclick="startGame()"
+                  class="btn btn-dark rounded-0 play-btn"
+               >
+                  Play!
+               </button>
+               <div class="active-body-part" style="grid-area: 12/12"></div>
+            </div>
+         </div>
+         <div class="row py-0 pt-2 text-center justify-content-center">
+            <div class="col-5">
+               <div class="button shadow" onclick="moveForward('ArrowUp')">
+                  △
+               </div>
+            </div>
+         </div>
+         <div class="row py-0 text-center justify-content-center">
+            <div class="col-5">
+               <div
+                  class="button shadow ms-4"
+                  onclick="moveForward('ArrowLeft')"
+               >
+                  ◁
+               </div>
+            </div>
+            <div class="col-5">
+               <div
+                  class="button shadow me-4"
+                  onclick="moveForward('ArrowRight')"
+               >
+                  ▷
+               </div>
+            </div>
+         </div>
+         <div class="row py-0 text-center justify-content-center">
+            <div class="col-5">
+               <div class="button shadow" onclick="moveForward('ArrowDown')">
+                  ▽
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col ms-3">
+               <div class="row">
+                  <div class="vent"></div>
+                  <div class="vent"></div>
+                  <div class="vent"></div>
+                  <div class="vent"></div>
+                  <div class="vent"></div>
+               </div>
+            </div>
+            <div class="col d-flex align-items-end justify-content-end">
+               <div class="row">
+                  <div
+                     class="pause shadow me-4"
+                     onclick="moveForward('Space')"
+                  ></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

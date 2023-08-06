@@ -1,0 +1,114 @@
+@import "./colors";
+
+.accordion-item:nth-child(odd) > h2 > button {
+   background-color: $light;
+}
+
+.summary-content {
+   padding: 15px;
+
+   background-color: rgb(37, 41, 48);
+   font-family: Inconsolata;
+
+   & .left-line {
+      padding-left: 10px;
+      border-left: 3px solid palevioletred;
+   }
+   & code {
+      color: white;
+      font-size: 1rem;
+   }
+
+   & .notes {
+      color: $notes;
+   }
+
+   & li {
+      color: white;
+   }
+}
+
+.overflow-examples {
+   margin-block-start: 10px;
+   width: 300px;
+   height: 50px;
+   /* overflow: auto; */
+   /* overflow: visible; */
+   /* overflow: scroll; */
+   /* overflow: hidden; */
+   background-color: #f00;
+}
+
+input#auto:checked ~ div.overflow-examples {
+   overflow: auto;
+}
+input#scroll:checked ~ div.overflow-examples {
+   overflow: scroll;
+}
+input#hidden:checked ~ div.overflow-examples {
+   overflow: hidden;
+}
+input#visible:checked ~ div.overflow-examples {
+   overflow: visible;
+}
+
+// Pseudo classes examples
+
+li:nth-child(1) p.pc {
+   &:hover {
+      color: purple;
+   }
+}
+
+li:nth-child(2) p.pc {
+   &:active {
+      color: purple;
+   }
+}
+
+.transition-example {
+   background-color: $light;
+   transition: all 0.2s;
+   &:hover {
+      transform: scale(1.1) rotate(3deg);
+      background-color: orange;
+   }
+}
+
+@keyframes animation-name1 {
+   from {
+      background-color: red;
+   }
+   to {
+      background-color: yellow;
+   }
+}
+
+.animation-example1 {
+   width: 100%;
+   height: 30px;
+   background-color: red;
+   animation: animation-name1 5s infinite;
+}
+
+@keyframes animation-name2 {
+   0% {
+      background-color: red;
+   }
+   25% {
+      background-color: yellow;
+   }
+   50% {
+      background-color: blue;
+   }
+   100% {
+      background-color: green;
+   }
+}
+
+.animation-example2 {
+   width: 100%;
+   height: 30px;
+   background-color: red;
+   animation: animation-name2 5s infinite;
+}

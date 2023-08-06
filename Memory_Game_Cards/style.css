@@ -1,0 +1,44 @@
+body {
+   background-color: #69656d;
+   min-height: 100vh;
+   width: 100vw;
+}
+
+.game-card {
+   min-width: 80px;
+   max-width: 150px;
+   position: relative;
+}
+
+@media (max-width: 576px) {
+   .game-card {
+      max-width: 80px;
+   }
+   .row > * {
+      padding: 0%;
+   }
+}
+
+.game-card > img {
+   width: 100%;
+   height: 100%;
+}
+
+.game-cards {
+   position: absolute;
+   left: 0%;
+   z-index: 2;
+}
+.difficulty-level {
+   background-color: #ffffff;
+}
+
+.container {
+   max-width: 1000px;
+}
+
+.center-all {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

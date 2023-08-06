@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+         crossorigin="anonymous"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      />
+
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+         crossorigin="anonymous"
+      ></script>
+
+      <script defer src="./src/script.js"></script>
+
+      <title>Yoel Bar-lev</title>
+   </head>
+   <body style="background-color: #1c282f; height: 100vh">
+      <div class="container-fluid px-0">
+         <!-- FIRST ROW-->
+
+         <div id="home-screen" class="row">
+            <div class="col px-0">
+               <div class="row">
+                  <!-- animated BG -->
+                  <div
+                     class="px-0"
+                     style="
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: -2;
+                        width: 100vw;
+                        overflow: hidden;
+                     "
+                  >
+                     <div class="animated-bg">
+                        <div class="light x1"></div>
+                        <div class="light x2"></div>
+                        <div class="light x3"></div>
+                        <div class="light x4"></div>
+                        <div class="light x5"></div>
+                        <div class="light x6"></div>
+                        <div class="light x7"></div>
+                        <div class="light x8"></div>
+                        <div class="light x9"></div>
+                     </div>
+                  </div>
+                  <!-- NAV -->
+                  <div
+                     class="col fixed-top"
+                     style="background-color: hsl(213, 21%, 10%, 80%)"
+                  >
+                     <nav
+                        class="navbar fluid navbar-expand-lg border-bottom border-bottom-dark"
+                        data-bs-theme="dark"
+                     >
+                        <div class="container-fluid">
+                           <a class="navbar-brand" href="#"
+                              >#Yoel Bar-Lev | Full-stack developer</a
+                           >
+                           <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarNav"
+                              aria-controls="navbarNav"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                           >
+                              <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div
+                              class="collapse navbar-collapse justify-content-end"
+                              id="navbarNav"
+                           >
+                              <ul class="navbar-nav">
+                                 <li class="nav-item">
+                                    <a
+                                       class="nav-link active"
+                                       aria-current="page"
+                                       href="#home-screen"
+                                       >Home</a
+                                    >
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#about"
+                                       >About me</a
+                                    >
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#projects"
+                                       >Projects</a
+                                    >
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#contact"
+                                       >Contact</a
+                                    >
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+               <!-- entry text -->
+               <div
+                  class="row text-center align-items-center"
+                  style="min-height: 100vh"
+               >
+                  <div class="col px-0">
+                     <div class="text-white entry-text">
+                        <h4 class="">Hello</h4>
+                        <h1 class="">I'm Yoel Bar-Lev</h1>
+                        <h5 class="">Full-Stack developer</h5>
+                        <a href="#projects"
+                           ><button class="mt-3">My Projects</button></a
+                        >
+                     </div>
+                     <!-- quote -->
+                     <div class="quote mt-5">
+                        <h1>
+                           <span>"Code</span>
+                           <span>is</span>
+                           <span>the</span>
+                           <span>brush,</span>
+                           <span>design</span>
+                           <span>is</span>
+                           <span>the</span>
+                           <span>palette,</span>
+                           <span>together</span>
+                           <span>they</span>
+                           <span>create</span>
+                           <span>digital</span>
+                           <span>masterpieces."</span>
+                        </h1>
+                        <!--Brian Tracy-->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- SECOND ROW -->
+         <div
+            id="about"
+            class="row mt-3 center-all align-content-stretch"
+            style="min-height: 100vh"
+         >
+            <div class="col px-0 col-lg-9 mx-auto">
+               <div class="row">
+                  <div class="col-12 col-xl-6 order-1">
+                     <div class="about-me text-center text-white rounded-4 p-5">
+                        <h1>About me</h1>
+                        <p class="mt-5 px-lg-5">
+                           HI! I'm Yoel Bar-Lev, a dedicated full-stack
+                           developer with a background in the art world,
+                           specializing in web development. <br />
+                           With a creative mindset, I bring a unique perspective
+                           to coding, combining artistic flair with technical
+                           expertise. I strive to create visually appealing and
+                           user-friendly websites that seamlessly blend
+                           aesthetics with functionality. <br />
+                           Continual learning keeps me updated on industry
+                           trends, ensuring modern, responsive, and
+                           high-performing websites.
+                           <br /><br />
+                           Let's Create together!
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-12 col-xl-6 order-0 order-sm-1">
+                     <div class="center-all h-100 about-me">
+                        <img
+                           src="./images/portfolio_img.jpg"
+                           class="h-100 object-fit-cover overflow-hidden rounded-5"
+                           alt=""
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- technologies -->
+            <div class="row mt-3">
+               <div class="col-12 text-center text-white">
+                  <h3>technologies-used</h3>
+               </div>
+               <div class="col-12 col-lg-9 mx-auto technologies-used mt-3">
+                  <div class="row flex-nowrap">
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/html-5-svgrepo-com.svg"
+                           alt="Html logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/css-3-svgrepo-com.svg"
+                           alt="Css logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/sass-svgrepo-com.svg"
+                           alt="Sass logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/bootstrap-svgrepo-com.svg"
+                           alt="Bootstrap logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/javascript-svgrepo-com.svg"
+                           alt="JavaScript logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/typescript-svgrepo-com.svg"
+                           alt="Type-Script logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/vscode-svgrepo-com.svg"
+                           alt="Vscode logo"
+                        />
+                     </div>
+                     <div class="col">
+                        <img
+                           class="img-thumbnail"
+                           src="./images/Icons/github-142-svgrepo-com.svg"
+                           alt="Github logo"
+                        />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!--THIRD ROW -->
+         <div
+            class="row py-3 py-lg-3"
+            style="min-height: 100vh; background-color: #1e3c52"
+         >
+            <div class="col col-lg-9 mx-auto bg-opacity-10 text-center">
+               <a
+                  href="https://drive.google.com/drive/folders/19csiQJ7iLIrZPCmhzI0YXC8sUCRH7X1K?usp=sharing"
+               >
+                  <button class="col col-md-6 btn btn-info m-3">
+                     Download all Projects
+                  </button>
+               </a>
+               <div id="projects" class="row gy-3 g-lg-5"></div>
+            </div>
+            <!--card template-->
+            <!-- <div class="col col-lg-4 center-all">
+               <div class="card" style="width: 18rem">
+                  <img
+                     src="./images/Sites_thumbnails/Expenses-Tracker.png"
+                     class="card-img-top"
+                     alt="Expenses tracker"
+                  />
+                  <div class="card-body">
+                     <h5 class="card-title">Expenses tracker</h5>
+                     <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                     </p>
+                  </div>
+                  <div class="list-group list-group-flush">
+                     <a
+                        href="https://github.com/YoyoBL/Expenses_Tracker"
+                        class="list-group-item list-group-item-action"
+                        ><i class="bi bi-github"></i> Git Link</a
+                     >
+                     <a href="#" class="list-group-item list-group-item-action">
+                     </a>
+                  </div> 
+               </div>
+            </div>-->
+         </div>
+
+         <!-- FOURTH ROW -->
+         <div id="contact" class="d-flex flex-column min-vh-100">
+            <div class="flex-grow-1 d-flex align-items-center">
+               <div class="container">
+                  <form
+                     class="form text-center text-white"
+                     action="https://formspree.io/f/mrgwgnwk"
+                     method="POST"
+                  >
+                     <fieldset>
+                        <!-- Form Name -->
+                        <legend class="h2 mb-3">Contact Me</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group mt-3">
+                           <div class="col-md-4 mx-auto">
+                              <input
+                                 name="Name"
+                                 type="text"
+                                 placeholder="Name"
+                                 class="form-control input-md"
+                                 required=""
+                              />
+                           </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group mt-3">
+                           <div class="col-md-4 mx-auto">
+                              <input
+                                 name="Mail"
+                                 type="email"
+                                 placeholder="Mail"
+                                 class="form-control input-md"
+                                 required=""
+                              />
+                           </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group mt-3">
+                           <div class="col-md-4 mx-auto">
+                              <input
+                                 name="Phone"
+                                 type="text"
+                                 placeholder="Phone"
+                                 class="form-control input-md"
+                              />
+                           </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group mt-3">
+                           <div class="col-md-4 mx-auto">
+                              <textarea
+                                 placeholder="Message"
+                                 class="form-control"
+                                 id="textarea"
+                                 name="Message"
+                              ></textarea>
+                           </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group mt-3">
+                           <div class="col-md-4 mx-auto">
+                              <button
+                                 id="singlebutton"
+                                 name="singlebutton"
+                                 class="btn btn-primary"
+                              >
+                                 Send
+                              </button>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </form>
+               </div>
+            </div>
+
+            <div
+               class="col-12 d-flex align-items-center"
+               style="background-color: #090e11; height: 4rem"
+            >
+               <div class="col-10 d-flex justify-content-end text-white">
+                  <div>Generated By Yoel BarLev</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+
+   <style></style>
+</html>
